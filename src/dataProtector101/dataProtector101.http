@@ -1,0 +1,9 @@
+@dataProtector101_HostAddress = http://localhost:5210
+
+POST {{dataProtector101_HostAddress}}/protect?data=hello
+Accept: application/json
+
+###
+
+POST {{dataProtector101_HostAddress}}/unprotect?data=CfDJ8KifiklQuVdLugHYC-wEMX_Ul2PNfmZHMUYSTxZUWGCOcMMU6V_uK0qW-HGcu0taQEn4xG5UJzfuZfFkQRWdGHY_yau9xRiE6N-LrjHYv6nuCgcElxyf_kU5zARKZdoNXw
+Accept: application/json

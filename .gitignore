@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/src/dataProtector101/bin/Debug/net9.0
+/src/dataProtector101/obj
