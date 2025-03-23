@@ -18,7 +18,7 @@ This project demonstrates how to use **ASP.NET Core Data Protection** to securel
 
 ### 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/fkucukkara/dataProtector101.git
 cd aspnetcore-data-protection
 ```
 
