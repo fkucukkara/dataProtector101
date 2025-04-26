@@ -15,14 +15,13 @@ app.MapPost("/protect", (IDataProtectionProvider provider, HttpContext context) 
 
     if (string.IsNullOrEmpty(input))
     {
-        return Results.BadRequest("Please provide 'data' in the query string.");
+        return Results.BadRequest("Please provide 'data' in the query string!");
     }
 
     var protectedData = protector.Protect(input!);
     return Results.Ok(new { ProtectedData = protectedData });
 });
 
-// Unprotect endpoint
 app.MapPost("/unprotect", (IDataProtectionProvider provider, HttpContext context) =>
 {
     var protector = provider.CreateProtector("SamplePurpose");
@@ -30,7 +29,7 @@ app.MapPost("/unprotect", (IDataProtectionProvider provider, HttpContext context
 
     if (string.IsNullOrEmpty(input))
     {
-        return Results.BadRequest("Please provide 'data' in the query string.");
+        return Results.BadRequest("Please provide 'data' in the query string!");
     }
 
     try
@@ -40,7 +39,7 @@ app.MapPost("/unprotect", (IDataProtectionProvider provider, HttpContext context
     }
     catch (Exception ex)
     {
-        return Results.BadRequest(new { Error = "Invalid or expired data.", Details = ex.Message });
+        return Results.BadRequest(new { Error = "Invalid or expired data!", Details = ex.Message });
     }
 });
 
