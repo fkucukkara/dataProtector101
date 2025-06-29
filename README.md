@@ -11,8 +11,9 @@ This project demonstrates how to use **ASP.NET Core Data Protection** to securel
 
 ## 📌 Requirements
 
-- .NET 8 or later
-- ASP.NET Core
+Ensure the following are installed on your system:
+
+- .NET 9.0 SDK or later: [Download .NET](https://dotnet.microsoft.com/download)
 
 ## 🚀 Getting Started
 
